@@ -3,37 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity2">
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/line1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5"/>
-
-   <TextView
-       android:id="@+id/tvSurname"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintEnd_toEndOf="@id/line1"
-       android:text="Tursinbaev"
-       android:textColor="@color/black"
-       android:textSize="16sp"
-       android:layout_margin="16dp"/>
+    android:layout_height="64dp">
 
     <TextView
         android:id="@+id/tvName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/line1"
+        android:text="Mirbek"/>
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9521002"/>
+
+    <TextView
+        android:id="@+id/tvUserName"
+       app:layout_constraintStart_toEndOf="@id/tvName"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Mirbek"
-        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
         android:textSize="16sp"
-        android:layout_margin="16dp"/>
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="plus_201"/>
+
+    <TextView
+        android:id="@+id/tvTelegramId"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName"
+        app:layout_constraintStart_toStartOf="@id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="65498731"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
